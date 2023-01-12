@@ -6,12 +6,12 @@ const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
 
-const video_offset = 400;
+const video_offset = 423;
 
 
 const controller = new ScrollMagic.Controller();
 let scene = new ScrollMagic.Scene({
-  duration: 3000,
+  duration: 6000,
   offset: video_offset,
   triggerElemnt: intro,
   triggerHook: 0.5
@@ -20,6 +20,9 @@ let scene = new ScrollMagic.Scene({
   .addIndicators()
   .setPin(intro)
   .addTo(controller);
+
+
+
 
 
 // const textAnim  = TweenMax.fromTo(text, 3, {opacity: 1}, {opacity: 0});
@@ -40,6 +43,9 @@ scene.on('update', e => {
 
   console.log(e);
 });
+
+
+
 
 setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
