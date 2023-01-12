@@ -7,15 +7,14 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
+html, canvas, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
 u, i, center, dl, dt, dd, ol, ul, li, fieldset,
 form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
+tfoot, thead, tr, th, td, article, aside, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: 0;
@@ -23,7 +22,13 @@ section, summary, time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;}
+	vertical-align: baseline;
+}
+
+
+
+
+
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
@@ -71,6 +76,42 @@ input, select, textarea {
 	-ms-appearance: none;
 	appearance: none;
 }
+
+.intro {
+	height: 100vh;
+	/* position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); */
+	
+  }
+  
+  .intro video {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+  
+  }
+  
+  /* .intro h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	color: white;
+  } */
+  
+  /* section{
+	height: 100vh;
+	color: rgb(0, 0, 0);
+  }
+  
+  section h1{
+	padding-top: 300px;
+	text-align: center;
+	font-size: 80px;
+  } */
 
 /* Basic */
 
@@ -2353,13 +2394,21 @@ input, select, textarea {
 			}
 
 		.image.main {
+			margin-left: auto;
+  			margin-right: auto;
 			display: block;
-			margin: 0 0 3em 0;
-			width: 100%;
+			/* margin: 0 0 3em 0; */
+			max-height: 100vh;
+			/* width: 100%; */
+			/* width: auto; */
 		}
 
 			.image.main img {
-				width: 100%;
+				margin-left: auto;
+  			margin-right: auto;
+			display: block;
+				/* width: 100%; */
+				max-height: 100vh;
 			}
 
 			@media screen and (max-width: 736px) {
@@ -2706,26 +2755,6 @@ input, select, textarea {
 					}
 
 			.tiles article.style1 > .image:before {
-				background-color: #ffffff00;
-			}
-
-			.tiles article.style2 > .image:before {
-				background-color: #ffffff00;
-			}
-
-			.tiles article.style3 > .image:before {
-				background-color: #ffffff00;
-			}
-
-			.tiles article.style4 > .image:before {
-				background-color: #ffffff00;
-			}
-
-			.tiles article.style5 > .image:before {
-				background-color: #ffffff00;
-			}
-
-			.tiles article.style6 > .image:before {
 				background-color: #ffffff00;
 			}
 
@@ -3166,7 +3195,7 @@ input, select, textarea {
 
 	#footer {
 		padding: 5em 0 6em 0 ;
-		background-color: #f6f6f6;
+		background-color: #000000;
 	}
 
 		#footer > .inner {
