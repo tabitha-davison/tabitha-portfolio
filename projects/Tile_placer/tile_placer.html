@@ -57,14 +57,46 @@
 							
 							
 							<span class="image main"><img src="./pic01.png" alt="" /></span>
-							<p>Untiled is a novelty pick and place machine capable of plotting (and animating) low resolution binary images</p>
-							<p>Made for Olin 2023 Principal of Integrated Engineering class</p>
-							<span class="image main"><img src="./pic02.png" alt="" /></span>
+							<p>Un-tiled is a novelty pick and place machine capable of plotting (and animating) low resolution binary images.
+								It works by flipping a grid of multi-colred tiles one by one in order to form a complete picture. 
+								The process begins with a gantry system capable of moving a toolhead to the location of a tile that needs to be flipped. 
+								 From there, the toolhead is lowerd so that it can pick up the tile using a suction nozzel.
+								 The tile is then droped into the "flipper", a gravity fed side which flips the tile to the side with the opposite color. 
+								 Finaly, the tile is retuend to its spot in the grid and the machine moves on to the next tile.
+								
+							</p>
+							<span class="image main"><img src="./pic03.gif" alt="" /></span>
+							<p>Untiled was developed by a 5-person team as part of the Olin 2023 Principal of Integrated Engineering class. 
+								My most significat contibutions included the design, prototpying, and manufacturin of the x-axis gantry belt system and flipper. </p>
+							<span class="image main"><img src="./pic04.png" alt="" /></span>
+							<p>In order to complete each tile-flip in the shortes time possible, the design of the gantry was optemized for speed.
+								This is evident in the "laser-cutter" inspired gantry design. The team elected for a cartesian drive system due to its simplicity 
+								and compatiblity with our system architecutre. I was resposible for building out the x-axis motion system which consisted of a motor mount and belt tensioner 
+								along with the additional stricutre to mount the x-axis cross beam to the y-xais linear rails.
+								
+							</p>
 
+							<p>One major learning opportunity I had when developing this subassebly was how to design for compatability and integration with the other subsystems. 
+								In addition to frequent communication with the other memebers of the team, parametric modeling helped my design to be eaily adaptable and meet the dynamic requirements of the other sub-systems.
+
+								
+							</p>
+
+							<p>I also spent significant time developing the passive tile flipper and getting it to function with perfect reliablity. </p>
+
+								<span class="image main"><img src="./pic02.png" alt="" /></span>
+							<p>Despite the team's intial cncerns with the idea, the physical flipping of the tiles turned out to be the easy part and I was able to move from an idea to a wokring prototpe in just a few hours. 
+								The challenge was figuring out how to allign the tiles after each flip so that they coudl be picked up again while minimizing possitional inaccuracies. 
+								All of the remaning prototypes targeted a different potential failuremode that would emerge during testing.
+							</p>
+							
 
 							<div class="intro">
 								<video src = "./flipper.mp4"></video>
 							</div>
+
+							<p>The final design was highly sucesfull and contributed to the machine's ability to opperate contiusously for hours without human intervention.	
+							</p>
 							
 								<!-- <section>
 									<h1>This is more text</h1>

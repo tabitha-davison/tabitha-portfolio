@@ -6,7 +6,7 @@ const text = intro.querySelector("h1");
 const section = document.querySelector("section");
 const end = section.querySelector("h1");
 
-const video_offset = 1623;
+const video_offset = 3700;
 
 
 const controller = new ScrollMagic.Controller();
@@ -17,7 +17,7 @@ let scene = new ScrollMagic.Scene({
   triggerHook: 0.5
   
 })
-  // .addIndicators()
+  .addIndicators()
   .setPin(intro)
   .addTo(controller);
 
@@ -51,6 +51,6 @@ setInterval(() => {
   delay += (scrollpos - delay) * accelamount;
   console.log(scrollpos, delay);
   video.currentTime = delay;
-}, 33.3);
+}, 80);
  
 
