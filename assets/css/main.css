@@ -23,11 +23,15 @@ section, summary, time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	scroll-behavior: smooth;
 }
 
 
 
-
+a {
+	text-decoration: none;
+	color: black;
+   } 
 
 
 article, aside, details, figcaption, figure,
@@ -135,6 +139,8 @@ input, select, textarea {
 		box-sizing: border-box;
 	}
 
+
+
 	*, *:before, *:after {
 		box-sizing: inherit;
 	}
@@ -142,6 +148,8 @@ input, select, textarea {
 	body {
 		background: #ffffff;
 	}
+
+
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
 			-moz-animation: none !important;
@@ -157,7 +165,7 @@ input, select, textarea {
 /* Type */
 
 	body, input, select, textarea {
-		color: #585858;
+		color: #000000;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 300;
@@ -208,6 +216,7 @@ input, select, textarea {
 	}
 
 	h1 {
+		color: #585858;
 		font-size: 2.75em;
 		font-weight: 700;
 		line-height: 1.3;
@@ -316,6 +325,8 @@ input, select, textarea {
 		margin: 0 0.25em;
 		padding: 0.25em 0.65em;
 	}
+
+	
 
 	pre {
 		-webkit-overflow-scrolling: touch;
@@ -1889,7 +1900,7 @@ input, select, textarea {
 			display: inline-block;
 			text-align: center;
 			line-height: 2.65em;
-			color: inherit;
+			color: white;
 		}
 
 			.icon.style2:before {
@@ -1902,7 +1913,7 @@ input, select, textarea {
 			}
 
 			.icon.style2:active {
-				background-color: rgba(242, 132, 158, 0.1);
+				background-color: rgb(132, 0, 0);
 			}
 
 /* List */
@@ -2364,11 +2375,31 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 45%
 		}
 
-			.image.left img, .image.right img {
+		.image.third {
+			max-width: 33%
+		}
+
+		.image.half {
+			max-width: 50%
+		}
+
+			.image.left img, .image.right img, .image.third img, .image.half img{
 				width: 100%;
+			}
+
+		.image.third {
+				float: left;
+				padding: 0 1.5em 1em 0;
+				top: 0.25em;
+			}
+
+			.image.half {
+				float: left;
+				padding: 0 1.5em 1em 0;
+				top: 0.25em;
 			}
 
 		.image.left {
@@ -2384,9 +2415,13 @@ input, select, textarea {
 		}
 
 		.image.fit {
+			margin-left: auto;
+  			margin-right: auto;
 			display: block;
-			margin: 0 0 2em 0;
-			width: 100%;
+			float: center;
+			/* margin: 0 0 2em 0; */
+			max-width: 100%
+	
 		}
 
 			.image.fit img {
@@ -2402,6 +2437,8 @@ input, select, textarea {
 			/* width: 100%; */
 			/* width: auto; */
 		}
+
+
 
 			.image.main img {
 				margin-left: auto;

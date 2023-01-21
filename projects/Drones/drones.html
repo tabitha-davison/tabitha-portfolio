@@ -1,0 +1,229 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>FPV Drones</title>
+		<link rel="icon" href="../logo.svg">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+							<!-- Logo -->
+								<a href="../../index.html" class="logo">
+									<span class="symbol"><img src="../logo.svg" alt="" /></span><span class="title">Rowan Jansens</span>
+								</a>
+
+							<!-- Nav -->
+								<nav>
+									<ul>
+										<li><a href="#menu">Menu</a></li>
+									</ul>
+								</nav>
+
+						</div>
+					</header>
+
+				<!-- Menu -->
+					<nav id="menu">
+						<h2>Menu</h2>
+						<ul>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="generic.html">Ipsum veroeros</a></li>
+							<li><a href="generic.html">Tempus etiam</a></li>
+							<li><a href="generic.html">Consequat dolor</a></li>
+							<li><a href="elements.html">Elements</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>FPV Drones</h1>
+
+							<p>Over the years, I have built 4 custom FPV racing drone from off-the-shelf components and modifed/upgraded several additiona drones.
+								This hopbby has taught me many skills including PID contoll theory and tuning, battery and electrical engineering, Radio-Frrequency science, and flight theory.
+							</p>
+
+							
+							
+							<!-- <a href="#5inch">Click Here to Smoothly Scroll Down</a>
+
+							<div><span class="image fit"><img src="./pic01.png" width="" alt="" /></span></div> -->
+							
+
+							
+							<div id="5inch">
+								<h2>5-INCH</h2>
+
+								<div><span class="image fit"><img src="./pic01.png" width="" alt="" /></span></div>
+								
+								<p>
+									While some drones seek to optemize one or two specific design paramters, this craft was meant to be a more "well-rounded" flyer capable of carying a GoPro.
+									It compromises weight, power, and durability in such a way that alignes with my flying style to give thrilling performance at an acceptable flight time.</p>
+
+
+							</div>
+
+							<div id="3inch">
+								<h2>3-INCH</h2>
+								<div><span class="image fit"><img src="./pic02.png" width="" alt="" /></span></div>
+								
+								<p>While the 5" is my go-to drone for capturing HD video, in some cases, I found that it presetend to large of a financial and/or public saftey risk if it were to crash.
+									
+
+									
+									I built this drone to be extreamyl light and compact while still having a powerfull drivratin cappable of spinning 3" propellors. 
+									This size-to-weight class maintaines extream manuverablity and provides a unique and more-accesibble flying exprience.</p>
+
+							</div>
+
+							<div id="gopro">
+								<h2>Ultralight GoPro</h2>
+								<p>While my 3" drone provides the best flying expirence out of my entinre fleet, it was not designedwith the ablity to record high quality video. 
+									Since a lot of my enjoyment of this hobby comes from producing videos, I set out to equip this drone with an ultralight GoPro.
+									While GoPro modifications have been done before in the community, I did not find anyone who had documented such drastic modifications with the camera model that I had.
+									Therfore, I had to reverse enginer the camera wiithouth out any reasrouces or guides. 
+									In the end, I was able to reduce the weight of the camera from 74 grams to 15 grams while maintinaitngs its full functionality.</p>
+
+									<div><span class="image half"><img src="./pic05.png" width="" alt="" /></span></div>
+									<div><span class="image half"><img src="./pic06.png" width="" alt="" /></span></div>
+
+									<p>I also used Topology-Optimizatino to design a cantopy mount for the new camera system.</p>
+
+							</div>
+
+							<div id="resonance">
+								<h2>Frame resonance modeling</h2>
+								<p>In the last few years, frame resonance analysis has rissen to the top of modern Drone dynamic research.
+									</p>
+
+									<div><span class="image third"><img src="./pic20.gif" width="" alt="" /></span></div>
+										<div><span class="image third"><img src="./pic21.gif" width="" alt="" /></span></div>
+										<div><span class="image third"><img src="./pic22.gif" width="" alt="" /></span></div>
+
+									<p>I perfomed a frequency study in SOLIDWORS in order to visulize the main reosnant modes of one of my drones. 
+
+
+										
+
+										The results of the study were used to derive a 2nd order ODE that encapuslate the significat motion. 
+										Finaly, I perfomred Forier analsysis on real gryosope data from the drone to compare the real resonant frequencies with the eigenfrequencies of the kinematic model.</p>
+
+										<div><span class="image third"><img src="./pic30.png" width="" alt="" /></span></div>
+										<div><span class="image third"><img src="./pic31.png" width="" alt="" /></span></div>
+										<div><span class="image third"><img src="./pic32.png" width="" alt="" /></span></div>
+
+
+										<p>
+											Despite its mathematical simplicity, the model proves to be a good predictor of the resoannte frequinceis.
+											It can be used to guide inital frame design and inform gyro notch-filtering on drones where blackbox data is not avalible.
+
+										</p>
+
+										<p>
+											I also used MATLAB to explore the correlation between freqeuency and thoutle. 
+											This plot gives insite into the corrlataion between motor RPM and frame vibration which can be used to tune dynamic notch filters more precisely.
+
+										</p>
+
+							</div>
+
+							
+
+
+
+							
+							
+
+							
+
+							<h2><center>NEXT</center></h2>
+							<section class="tiles">
+							<article class="style1">
+								<span class="image">
+									<img src="../Tile_placer/pic01.png" alt="" />
+								</span>
+								<a href="../Tile_placer/tile_placer.html">
+									<h2>Un-tiled</h2>
+									<div class="content">
+										<p>A novelty CNC pick & place machine</p>
+									</div>
+								</a>
+							</article>
+							</section>
+
+
+
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+							<section>
+								<h2>Get in touch</h2>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<input type="text" name="name" id="name" placeholder="Name" />
+										</div>
+										<div class="field half">
+											<input type="email" name="email" id="email" placeholder="Email" />
+										</div>
+										<div class="field">
+											<textarea name="message" id="message" placeholder="Message"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send" class="primary" /></li>
+									</ul>
+								</form>
+							</section>
+							<section>
+								<h2>Follow</h2>
+								<ul class="icons">
+									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+								</ul>
+							</section>
+							<ul class="copyright">
+								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							</ul>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+		<script src="../../assets/js/jquery.min.js"></script>
+		<script src="../../assets/js/browser.min.js"></script>
+		<script src="../../assets/js/breakpoints.min.js"></script>
+		<script src="../../assets/js/util.js"></script>
+		<script src="../../assets/js/main.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+		<script src="./animation.js"></script>
+
+	</body>
+</html>

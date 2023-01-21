@@ -11,7 +11,7 @@ const video_offset = 423;
 
 const controller = new ScrollMagic.Controller();
 let scene = new ScrollMagic.Scene({
-  duration: 1700,
+  duration: 850,
   offset: video_offset,
   triggerElemnt: intro,
   triggerHook: 0.5
@@ -39,7 +39,7 @@ let scrollpos = 0;
 let delay = 0;
 
 scene.on('update', e => {
-  scrollpos = (e.scrollPos - video_offset) / 1000;
+  scrollpos = (e.scrollPos - video_offset) / 500;
 
   console.log(e);
 });
