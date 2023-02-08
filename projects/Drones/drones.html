@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/flickity.css" media="screen">
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -107,40 +108,79 @@
 
 							<div id="resonance">
 								<h2>Frame resonance modeling</h2>
-								<p>In the last few years, frame resonance analysis has rissen to the top of modern Drone dynamic research.
+								<p>In the last few years, frame resonance analysis has rissen to the top of high-performance Drone dynamic research. In this project, I developed a novel anlaytical model for studying drone resosnace.
 									</p>
 
-									<div><span class="image third"><img src="./pic20.gif" width="" alt="" /></span></div>
-										<div><span class="image third"><img src="./pic21.gif" width="" alt="" /></span></div>
-										<div><span class="image third"><img src="./pic22.gif" width="" alt="" /></span></div>
 
-									<p>I perfomed a frequency study in SOLIDWORS in order to visulize the main reosnant modes of one of my drones. 
+					
+
+
+									<div class="carousel"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic20.gif">
+									<img src="pic21.gif">
+									<img src="pic22.gif">
+
+									</div>
+
+
+									<p> <br>
+										First, I perfomed a frequency study in SOLIDWORKS in order to visulize some of the common resonant modes that can occure within a drone frame. 
 
 
 										
 
-										The results of the study were used to derive a 2nd order ODE that encapuslate the significat motion. 
-										Finaly, I perfomred Forier analsysis on real gryosope data from the drone to compare the real resonant frequencies with the eigenfrequencies of the kinematic model.</p>
+										I used the results of the study to derive a 2nd order ODE that encapuslate the significat motion. 
+										Finaly, I perfomed Forier analsysis on real gryosope data from a drone to compare the real resonant frequencies with the eigenfrequencies of the kinematic model.</p>
 
-										<div><span class="image third"><img src="./pic30.png" width="" alt="" /></span></div>
-										<div><span class="image third"><img src="./pic31.png" width="" alt="" /></span></div>
-										<div><span class="image third"><img src="./pic32.png" width="" alt="" /></span></div>
+										<div class="carousel"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic30.png">
+									<img src="pic31.png">
+									<img src="pic32.png">
+
+									</div>
 
 
-										<p>
+										<p> <br>
 											Despite its mathematical simplicity, the model proves to be a good predictor of the resoannte frequinceis.
-											It can be used to guide inital frame design and inform gyro notch-filtering on drones where blackbox data is not avalible.
+											It presents value in terms of guiding inital frame design and informing gyro notch-filtering on drones where blackbox data is not avalible.
 
 										</p>
 
 										<p>
-											I also used MATLAB to explore the correlation between freqeuency and thoutle. 
+											I also used MATLAB to explore the correlation between freqeuency and throtle. 
 											This plot gives insite into the corrlataion between motor RPM and frame vibration which can be used to tune dynamic notch filters more precisely.
 
 										</p>
 
+										<div class="carousel"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic40.png">
+									<img src="pic41.png">
+									<img src="pic42.png">
+									</div>
+
+									<br>
+
 							</div>
 
+							<div id="Film">
+								<h2>Drone Films</h2>
+								<p>In addition to the technological side, I enjoy producing films realted to drones including flight videos and build guides.
+					
+									</p>
+
+									
+
+
+
+							</div>
+
+
+							<center><iframe width="1000" height="563" src="https://www.youtube.com/embed/3IKienyUwGA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							</center>
+							
 							
 
 
@@ -224,6 +264,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="./animation.js"></script>
+		<script src="../../assets/js/flickity.js"></script>
 
 	</body>
 </html>
