@@ -102,6 +102,8 @@ input, select, textarea {
 	background: rgb(255, 255, 255);
 	border-radius: 4px;
   }
+
+  
   
   .carousel img {
 	display: block;
@@ -111,11 +113,17 @@ input, select, textarea {
   }
   
   @media screen and ( min-width: 768px ) {
-	.carousel img {
-	  height: 400px;
+	.carousel.large img {
+	  height: 700px;
 	  border-radius: 4px;
 	}
+	.carousel.small img {
+		height: 500px;
+		border-radius: 4px;
+	  }
   }
+
+
   
   /* .intro h1{
 	position: absolute;
