@@ -11,6 +11,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/flickity.css" media="screen">
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -54,32 +55,121 @@
 							<h1>Olin Rocketry</h1>
 							<span class="image fit"><img src="./pic01.png" alt="" /></span>
 
-							<p>Olin ROcketry is a student lead team with the goal of building a Studented Reaseached and Developed solid-propellant rocket for competition at the Spaceport America Cup.
-                                As the avionics lead, I am working with a team of 5 to 
+							<p>Olin Rocketry is a student lead team with the goal of building a Studented Reaseached and Developed solid-propellant rocket for competition at the Spaceport America Cup.
+                                
 
 							</p>
 
-							<span class="image fit"><img src="./pic02.png" alt="" /></span>
-                            <p>
-                                Our latest project is developing a Completry Student REaserched and Developed avionics system to fly on our upcomming launchs.
-
-                                The system was designed to be modular such that different PCBs can combine to carry out the mision tasks such as apogee detection, parachute depomyme, data logging, and recovery.
-                                In additiona to faciliting better collaboration, the modular design allows the team to quikly add new features and functionality to the system over time.
-                                
-      
 
 
 
+							<!-- <span class="image left"><img src="./pic10.JPG" alt="" /></span> -->
 
-                                I proposed a major architecural change in which we attempt to add modularity to the avionics system.
-                                The goal is to build out the system using a series of "building block" PCBs that provide different funtionaliy such as data logging, apogee dectection, and telemetry.
-                                This will allow the team to focus our attentions 
-                            </p>
+	
+								
+
+									<h2>PCB Design</h2>
+									<p>As the avionics lead enginer, I am lead a 5-person team to develop an avionics suite to meet the mission requiremtns of apogee-detection, parachute deployment, data loggin, and telemetry.
+										My concept for the system was centered around modularity in order to provide the team with a future-proof and adaptable architecture.
+										</p>
+									<h3>PRISM</h3>
+								<p>The Primary Recovery, Instrametation, and Sensing Moduleu (PRISM) is composired of two PCBs which severe as a standalone flight computer. 
+									The system uses a Teesny 4.1 microcontorller, barometric altimter, 9-axis IMU, and a power distribution board with custome switches and ignitor circutry.  </p>
 
 
-							<div class="intro">
+									<div class="carousel small"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic20.png">
+									<img src="pic21.png">
+								</div>
+
+							</br>
+
+									
+									<h3>EAST</h3>
+									<p>The Expanded Avionics, Sensing, & Telemetry (EAST) system is a series of PCBs which can be stacked together (via a standardized data bus) to provide additional funcitonality to the avionics system.
+										An additinal microcontroller at the base of the EAST stack is resposible for controlling the various layers and communicating with the PRISM system.
+										In our first rendition of the system, the first expansion board adds GPS capabilites as well as a long-distance radio for real-time data transmition.
+									</p>
+
+									<div class="carousel small"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic22.png">
+									<img src="pic23.png">
+								</div>
+							</br>
+
+							<h2>Mechanical Design</h2>
+									<p>My favoire contribution to the project was the hardware design and integration.
+										The system was constrained by a 3-inch dimater maximum footpprint, demanding compactenss and thoughfull integration.
+										A CNC-machined aluminum frame supportes the entire strucutre while 3D printed bulkeads provide a mounting interface between the avionics and the rocket.
+										The battery enclouse uses an over-center latch mechanism to retain the cells and fits semlessley into to main strucutre.
+										To power and arm the device, I prototyped a unque electrical "key-switch" that is built into the power-distribution PCB.
+
+										
+										</p>
+									
+
+										<span class="image third"><img src="./pic02.png" alt="" /></span>
+										<span class="image third"><img src="./pic04.png" alt="" /></span>
+										<span class="image third"><img src="./pic03.png" alt="" /></span>
+
+
+										In additin, I performed strucutreral anlysis on the metal bulkeads that support the avionics bay in the rocket to ensure adequate streght under the dynbamic shock loads of parachite deploment.
+										The bulkead geometry was later tested expirmentaly and found to be sufficent.
+
+
+									</br>
+									
+
+							
+
+							<h2>Kalman Filter Algorithm</h2>
+									<p>The main flight computer relies on a Kalman Filter algorihtm to estimate the vehciles position and velocity using data from the IMU and barometric altimeter. 
+										This state information is then used to trigger different flight events such as launch-detection, droug shoot deploy, and main shoot deploy. 
+										The Kalman filter has been shown to perform across multiple flights and testing procedures.
+										</p>
+
+							
+
+							<h2>Telepy Ground Station</h2>
+								<p>To make full use of the live telemtry that we get from the avionics system, I developed a custome ground-station software for telemetry visualization and logging.
+									This open-source software is wirten in Python and is an easy way for the team to moinotr the avionics status.
+									</p>
+
+									<!-- <div class="intro">
 								<video src = "./video01.mp4"></video>
-							</div>
+							</div> -->
+
+
+
+							<h2>Testing</h2>
+									<p>Extensive testing was used to tune the Kalman filter and ensure system reliablity prior to flight tests. 
+										We found that riding in an elevator provided a simple yet effective testing procedure for early development.
+										Before the first test launch, we mounted the avionics to a drone and used it to simulate launch, apogee, and landing.
+										We also perfomed ground seperation testing to ensure functionality of the ignitor circutry.
+
+
+											
+
+										</p>
+
+
+											<span class="image third"><img src="./pic05.jpg" alt="" /></span>
+											<span class="image third"><img src="./pic06.jpg" alt="" /></span>
+											<span class="image third"><img src="./pic05.jpg" alt="" /></span>
+
+									</br>
+
+									
+
+							
+
+                        
+
+
+
+							
 
 		
 							
@@ -144,6 +234,7 @@
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 			<script src="./animation.js"></script>
+			<script src="../../assets/js/flickity.js"></script>
 
 	</body>
 </html>
