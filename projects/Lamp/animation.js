@@ -1,20 +1,23 @@
 
 
-const intro = document.querySelector(".intro");
-const mainWind = document.getElementById("main");
-const video = intro.querySelector("video");
-const text = intro.querySelector("h1");
+const view1 = document.getElementById("view1")
+const video = view1.querySelector("video");
 
-// const wrapperWind = document.getElementById("inner")
-// var y = document.getElementById("i1").offsetTop;
-// var hhhh = wrapperWind.offsetTop;
 
-const y = intro.offsetTop;
-const h = window.innerHeight;
-const hhh = video.offsetHeight;
-const hh = mainWind.offsetTop;
 
-const video_offset = 0;
+
+const controller2 = new ScrollMagic.Controller();
+let scene2 = new ScrollMagic.Scene({
+  // duration: '5000%',
+  triggerElement: view1,
+  triggerHook: 0.5
+  
+})
+  .addIndicators()
+  .setClassToggle('#view1', 'fade-in')
+  .addTo(controller2);
+
+
 
 
 
@@ -22,27 +25,16 @@ const video_offset = 0;
 const controller = new ScrollMagic.Controller();
 let scene = new ScrollMagic.Scene({
   duration: '50%',
-  // offset: video_offset,
-  triggerElement: intro,
-  triggerHook: 0.
+
+  triggerElement: view1,
+  triggerHook: 0.1
   
 })
-  // .addIndicators()
-  .setPin(intro)
+  .addIndicators()
+  .setPin(view1)
   .addTo(controller);
 
 
-
-
-
-// const textAnim  = TweenMax.fromTo(text, 3, {opacity: 1}, {opacity: 0});
-// let scene2 = new ScrollMagic.Scene({
-//   duration: 3000,
-//   triggerElemnt: intro,
-//   triggerHook: 0
-// })
-// .setTween(textAnim)
-// .addTo(controller);
 
 let accelamount = 0.5;
 let scrollpos = 0;
