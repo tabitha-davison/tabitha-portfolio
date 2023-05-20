@@ -25,8 +25,8 @@ const controller3 = new ScrollMagic.Controller();
 let scene3 = new ScrollMagic.Scene({
   // duration: '5000%',
   triggerElement: view3,
-  triggerHook: .3,
-  offset: 500
+  triggerHook: .4,
+  // offset: 500
   
 })
   .addIndicators()
@@ -53,7 +53,7 @@ let scrollpos = 0;
 let delay = 0;
 
 scene1.on('update', e => {
-  scrollpos = (e.scrollPos - e.startPos) / 900;
+  scrollpos = (e.scrollPos - e.startPos) / 700;
 
 });
 

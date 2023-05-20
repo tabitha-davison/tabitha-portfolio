@@ -25,12 +25,12 @@ window.onload = function(){
 const controller = new ScrollMagic.Controller();
 let scene = new ScrollMagic.Scene({
   duration: '50%',
-
+  offset: 50,
   triggerElement: view1,
   triggerHook: 0.1
   
 })
-  .addIndicators()
+  // .addIndicators()
   .setPin(view1)
   .addTo(controller);
 
@@ -41,7 +41,7 @@ let scrollpos = 0;
 let delay = 0;
 
 scene.on('update', e => {
-  scrollpos = (e.scrollPos - e.startPos) / 300;
+  scrollpos = (e.scrollPos - e.startPos) / 200;
 
 
 });
