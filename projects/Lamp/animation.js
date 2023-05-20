@@ -5,17 +5,17 @@ const video = view1.querySelector("video");
 
 
 
+window.onload = function(){
+  setTimeout(function() {
+    console.log('Page is loaded');
+    document.getElementById('view1').classList.add('fade-in');
 
-const controller2 = new ScrollMagic.Controller();
-let scene2 = new ScrollMagic.Scene({
-  // duration: '5000%',
-  triggerElement: view1,
-  triggerHook: 0.5
+  }, 100);
   
-})
-  .addIndicators()
-  .setClassToggle('#view1', 'fade-in')
-  .addTo(controller2);
+  
+};
+
+
 
 
 
