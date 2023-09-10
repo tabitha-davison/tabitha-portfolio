@@ -1,58 +1,69 @@
-
-
-const view1 = document.getElementById("view1")
-const video = view1.querySelector("video");
-
-
-
 window.onload = function(){
   setTimeout(function() {
     console.log('Page is loaded');
     document.getElementById('view1').classList.add('fade-in');
-
+    
   }, 100);
-  
-  
+
+
+
+
+
 };
 
-
-
-
-
-
-
-
-const controller = new ScrollMagic.Controller();
-let scene = new ScrollMagic.Scene({
-  duration: '50%',
-  offset: 50,
-  triggerElement: view1,
-  triggerHook: 0.1
+  var videoTarget = $('#video');
+  var duration = videoTarget.height();
+  var video = $('#video').get(0);
+  var progressvalue = 0;
+  var vid_height = 0;
+  var currentTime = 0;
+  var videoLength;
   
-})
-  // .addIndicators()
-  .setPin(view1)
-  .addTo(controller);
+  var video = $('#video').get(0);
+  
+  video.onloadedmetadata = function() {
+    console.log('metadata loaded!');
+    videoheight = video.offsetHeight;
+    videoLength = this.duration;
+
+
+    var controller = new ScrollMagic.Controller();
+  
+  
+        // create a scene
+        var scene = new ScrollMagic.Scene({
+          duration: 4*duration,
+          triggerElement: view1, 
+          triggerHook: 0.5,
+          offset: (videoheight/2)
+        })
+        .setPin('.project')
+        .addTo(controller)
+        .addIndicators()
+        .on("progress", function(e) {
+        progressvalue = Math.floor(100 * e.progress);
+        });
+  };
+  
+
+  let accelamount = 0.5;
+  let delay = 0;
+
+  setInterval(() => {
+  delay += (progressvalue -delay) * accelamount;
+  console.log(progressvalue, delay, vid_height);
+  
+  video.currentTime = videoLength* delay/100;
+  },90);
+      
+      
+  video.src="./animation01.mp4";
+  
 
 
 
-let accelamount = 0.5;
-let scrollpos = 0;
-let delay = 0;
-
-scene.on('update', e => {
-  scrollpos = (e.scrollPos - e.startPos) / 200;
 
 
-});
-
-
-
-
-setInterval(() => {
-  delay += (scrollpos - delay) * accelamount;
-  // console.log(scrollpos, delay);
-  video.currentTime = delay;
-},90);
+  
  
 
