@@ -62,7 +62,7 @@ window.onload = function(){
   };
   
 
-  let accelamount = 0.5;
+  let accelamount = 1;
   let delay = 0;
 
   setInterval(() => {

@@ -1,20 +1,14 @@
+window.onload = function(){
+  setTimeout(function() {
+    console.log('Page is loaded');
+    document.getElementById('view1').classList.add('fade-in');
+    
+  }, 100);
+};
 
 
 
 
-
-
-
-// function getPosition(element) {
-//   var yPosition = 0;
-
-//   while(element) {
-//       yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
-//       element = element.offsetParent;
-//   }
-
-//   return yPosition;
-// }
 
 
 
@@ -28,11 +22,8 @@ var videoTarget = $('#video');
   var offsetTop;
 
 
-  const view1 = document.getElementById("view1");
   const view2 = document.getElementById("view2");
   const main = document.getElementById("main");
-  // offsetTop = view2.getBoundingClientRect().top;
-  // offsetTop = getPosition(view1);
 
 
 
@@ -67,16 +58,31 @@ var videoTarget = $('#video');
         // create a scene
         var scene = new ScrollMagic.Scene({
           duration: 6*duration,
-          triggerElement: view1, 
+          triggerElement: view2, 
           triggerHook: 0.5,
           offset: videoheight/2
         })
-        .setPin(view1)
+        .setPin(view2)
         .addTo(controller)
         .addIndicators()
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
+        
+
+
+        const view3 = document.getElementById("view3");
+        const controller2 = new ScrollMagic.Controller();
+        let scene2 = new ScrollMagic.Scene({
+        triggerElement: view2,
+        offset: 6*duration + (videoheight/2),
+        triggerHook: 0.5
+        })
+          .addIndicators()
+          .setClassToggle('#view3', 'fade-in')
+          .addTo(controller);
+
+        };
 
 
         let accelamount = 0.5;
@@ -90,7 +96,7 @@ var videoTarget = $('#video');
   },90);
 
 
-  };
+ 
   
 
   
