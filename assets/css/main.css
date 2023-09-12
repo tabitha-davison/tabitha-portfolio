@@ -200,6 +200,7 @@ input, select, textarea {
 		}
 
 	a {
+		
 		-moz-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-webkit-transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		-ms-transition: border-bottom-color 0.2s ease, color 0.2s ease;
@@ -2378,7 +2379,8 @@ input, select, textarea {
 		border: 0;
 		display: inline-block;
 		position: relative;
-		position: ;
+		transform: transale3d(0,0,0); 
+
 	}
 
 		.image img {
