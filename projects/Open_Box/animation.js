@@ -1,3 +1,12 @@
+window.onload = function(){
+  setTimeout(function() {
+    console.log('Page is loaded');
+    document.getElementById('view1').classList.add('fade-in');
+    document.getElementById('view2').classList.add('fade-in');
+
+    
+  }, 100);
+};
 
 
 // const view1 = document.getElementById("view1")
@@ -80,9 +89,9 @@ var videoTarget = $('#video');
         // create a scene
         var scene = new ScrollMagic.Scene({
           duration: 4*duration,
-          triggerElement: view1, 
+          triggerElement: view2, 
           triggerHook: 0.5,
-          offset: offsetTop
+          offset: (videoheight/2)
         })
         .setPin(view2)
         .addTo(controller)
@@ -90,6 +99,23 @@ var videoTarget = $('#video');
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
+
+
+        const view3 = document.getElementById("view3");
+
+        const controller2 = new ScrollMagic.Controller();
+        let scene2 = new ScrollMagic.Scene({
+        triggerElement: view2,
+        offset: 4*duration + (videoheight/2),
+        triggerHook: 0.5
+
+        })
+          .addIndicators()
+          .setClassToggle('#view3', 'fade-in')
+          .addTo(controller2);
+
+  };
+
 
 
         let accelamount = 0.5;
@@ -103,7 +129,7 @@ var videoTarget = $('#video');
   },90);
 
 
-  };
+
   
 
   

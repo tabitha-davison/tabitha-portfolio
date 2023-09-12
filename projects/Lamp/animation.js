@@ -9,6 +9,7 @@ window.onload = function(){
 
 
 
+
 };
 
   var videoTarget = $('#video');
@@ -43,6 +44,23 @@ window.onload = function(){
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
+
+
+
+
+        const view3 = document.getElementById("view3");
+
+        const controller2 = new ScrollMagic.Controller();
+        let scene2 = new ScrollMagic.Scene({
+        triggerElement: view1,
+        offset: 4*duration + (videoheight/2),
+        triggerHook: 0.5
+
+        })
+          .addIndicators()
+          .setClassToggle('#view3', 'fade-in')
+          .addTo(controller2);
+
   };
   
 
