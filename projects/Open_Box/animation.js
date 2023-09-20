@@ -88,7 +88,7 @@ var videoTarget = $('#video');
   
         // create a scene
         var scene = new ScrollMagic.Scene({
-          duration: 4*duration,
+          duration: 4*duration*1.1,
           triggerElement: view2, 
           triggerHook: 0.5,
           offset: (videoheight/2)
@@ -106,7 +106,7 @@ var videoTarget = $('#video');
         const controller2 = new ScrollMagic.Controller();
         let scene2 = new ScrollMagic.Scene({
         triggerElement: view2,
-        offset: 4*duration + (videoheight/2),
+        offset: 4*duration*1.1 + (videoheight/2),
         triggerHook: 0.5
 
         })
@@ -118,7 +118,7 @@ var videoTarget = $('#video');
 
 
 
-        let accelamount = 0.5;
+        let accelamount = 0.9;
   let delay = 0;
 
   setInterval(() => {
@@ -135,7 +135,7 @@ var videoTarget = $('#video');
   
       
       
-  video.src="./animation01.mp4";
+  video.src="./animation02.mp4";
   
 
  

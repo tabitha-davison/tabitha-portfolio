@@ -62,7 +62,7 @@ window.onload = function(){
   };
   
 
-  let accelamount = 1;
+  let accelamount = 0.9;
   let delay = 0;
 
   setInterval(() => {
@@ -73,7 +73,7 @@ window.onload = function(){
   },90);
       
       
-  video.src="./animation01.mp4";
+  video.src="./lamp_animation02.mp4";
   
 
 
