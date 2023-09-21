@@ -40,7 +40,7 @@ window.onload = function(){
         })
         .setPin('.project')
         .addTo(controller)
-        .addIndicators()
+        // .addIndicators()
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
@@ -55,7 +55,7 @@ window.onload = function(){
         offset: 4*duration + (videoheight/2),
         triggerHook: 0.5
         })
-          .addIndicators()
+          // .addIndicators()
           .setClassToggle('#view3', 'fade-in')
           .addTo(controller);
 
