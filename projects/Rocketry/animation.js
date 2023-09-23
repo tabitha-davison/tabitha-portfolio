@@ -85,15 +85,15 @@ var videoTarget = $('#video');
         };
 
 
-        let accelamount = 0.5;
+        let accelamount = 0.2;
   let delay = 0;
 
   setInterval(() => {
   delay += (progressvalue -delay) * accelamount;
   console.log(progressvalue, delay, vid_height);
   
-  video.currentTime = videoLength * delay/100;
-  },90);
+  video.currentTime = videoLength * delay/100 - 0.001;
+  },20);
 
 
  
