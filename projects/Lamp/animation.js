@@ -15,6 +15,7 @@ window.onload = function(){
   var videoTarget = $('#video');
   var duration = videoTarget.height();
   var video = $('#video').get(0);
+  video.currentTime =  0;
   var progressvalue = 0;
   var vid_height = 0;
   var currentTime = 0;
@@ -26,6 +27,7 @@ window.onload = function(){
     console.log('metadata loaded!');
     videoheight = video.offsetHeight;
     videoLength = this.duration;
+    
 
 
     var controller = new ScrollMagic.Controller();
@@ -62,18 +64,18 @@ window.onload = function(){
   };
   
 
-  let accelamount = 0.9;
+  let accelamount = 0.2;
   let delay = 0;
 
   setInterval(() => {
   delay += (progressvalue -delay) * accelamount;
   console.log(progressvalue, delay, vid_height);
   
-  video.currentTime = videoLength* delay/100 -1;
-  },90);
+  video.currentTime = videoLength* delay/100 -0.001;
+  },20);
       
       
-  // video.src="./lamp_animation02.mp4";
+
   video.src="./output.mp4";
   
 
