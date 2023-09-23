@@ -71,7 +71,7 @@ window.onload = function(){
   delay += (progressvalue -delay) * accelamount;
   console.log(progressvalue, delay, vid_height);
   
-  video.currentTime = videoLength* delay/100 -0.001;
+  video.currentTime = videoLength* delay/100 -0.01;
   },20);
       
       
