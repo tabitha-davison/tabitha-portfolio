@@ -95,7 +95,7 @@ var videoTarget = $('#video');
         })
         .setPin(view2)
         .addTo(controller)
-        .addIndicators()
+        // .addIndicators()
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
@@ -110,7 +110,7 @@ var videoTarget = $('#video');
         triggerHook: 0.5
 
         })
-          .addIndicators()
+          // .addIndicators()
           .setClassToggle('#view3', 'fade-in')
           .addTo(controller2);
 
@@ -135,7 +135,7 @@ var videoTarget = $('#video');
   
       
       
-  video.src="./animation02.mp4";
+  video.src="./hinge_animation_FFMPEG.mp4";
   
 
  

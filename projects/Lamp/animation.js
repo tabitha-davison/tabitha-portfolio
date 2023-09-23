@@ -76,7 +76,7 @@ window.onload = function(){
       
       
 
-  video.src="./output.mp4";
+  video.src="./lamp_animation_FFMPEG.mp4";
   
 
 

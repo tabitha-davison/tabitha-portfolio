@@ -64,7 +64,7 @@ var videoTarget = $('#video');
         })
         .setPin(view2)
         .addTo(controller)
-        .addIndicators()
+        // .addIndicators()
         .on("progress", function(e) {
         progressvalue = Math.floor(100 * e.progress);
         });
@@ -78,7 +78,7 @@ var videoTarget = $('#video');
         offset: 6*duration + (videoheight/2),
         triggerHook: 0.5
         })
-          .addIndicators()
+          // .addIndicators()
           .setClassToggle('#view3', 'fade-in')
           .addTo(controller);
 
@@ -102,7 +102,7 @@ var videoTarget = $('#video');
   
       
       
-  video.src="./gsvideo.mp4";
+  video.src="./gs_animation_FFMPEG.mp4";
   
  
 

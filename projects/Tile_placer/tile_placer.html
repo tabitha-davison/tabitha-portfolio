@@ -5,200 +5,238 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
 <html>
-	<head>
-		<title>Tile Placer</title>
-		<link rel="icon" href="../logo.svg">
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<head>
+	<title>Tile Placer</title>
+	<link rel="icon" href="../logo.svg">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="../../assets/css/noscript.css" />
+	</noscript>
+</head>
 
-							<!-- Logo -->
-								<a href="../../index.html" class="logo">
-									<span class="symbol"><img src="../logo.svg" alt="" /></span><span class="title">Rowan Jansens</span>
-								</a>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
 
-						</div>
-					</header>
+				<!-- Logo -->
+				<a href="../../index.html" class="logo">
+					<span class="symbol"><img src="../logo.svg" alt="" /></span><span class="title">Rowan Jansens</span>
+				</a>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Ipsum veroeros</a></li>
-							<li><a href="generic.html">Tempus etiam</a></li>
-							<li><a href="generic.html">Consequat dolor</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>Un-tiled</h1>
+			</div>
+		</header>
 
-							
-							<section>
-							
-							<span class="image fit"><img src="./pic01.png" alt="" /></span>
-						</section>
-						<section>
-							<!-- <span class="image left"><img src="./pic03.gif" alt="" /></span> -->
-							<p>Un-tiled is a novelty pick-and-place machine capable of plotting (and animating) low-resolution binary images.
-                                It works by flipping a grid of dual-colored tiles one by one in order to form a complete picture. 
-                                The process begins with a gantry system which moves a toolhead to the location of a tile that needs to be flipped. 
-                                 From there, the toolhead is lowered so that it can pick up the tile using a vacuum nozzle.
-                                 The tile is then dropped into the "flipper", a gravity-fed side that flips the tile to the side with the opposite color. 
-                                 Finally, the tile is returned to its spot in the grid, and the machine moves on to the next tile.</p>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Ipsum veroeros</a></li>
+				<li><a href="generic.html">Tempus etiam</a></li>
+				<li><a href="generic.html">Consequat dolor</a></li>
+				<li><a href="elements.html">Elements</a></li>
+			</ul>
+		</nav>
 
-								 <p>Un-tiled was developed by a 5-person team as part of the Olin 2022 Principal of Integrated Engineering class. 
-                                    My most significant contributions included the design, prototyping, and manufacturing of both the x-axis gantry belt system and the flipper mechanism. </p>
-									
-								
-						
-
-							
-
-							</section>
-							<section>
-								
-							
-
-							<h2>x-axis</h2>
-							<p>In order to complete each tile flip in the shortest time possible, the design of the gantry was optimized for speed.
-                                The team elected to use a cartesian drive system due to its simplicity 
-                                and compatibility with our system architecture. I was responsible for building out the x-axis motion system which consisted of a motor mount and belt tensioner 
-                                along with the additional structure to mount the x-axis cross beam to the y-axis linear rails.
-								
-							</p>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>Un-tiled</h1>
 
 
-					
-
-							<div><span class="image fit"><img src="./pic04.png" width="400" alt="" /></span></div>
-
-							
 
 
-							<p>
-								One major learning opportunity I had when developing this subassembly was how to design for compatibility and integration with the other subsystems. 
-								In addition to frequent communication with the other members of the team, parametric modeling helped my design to be easily adaptable and meet the dynamic requirements of the other sub-systems.
+				<div id="view1" class="project">
 
-								
-							</p>
 
-							<h2>flipper</h2>
-							<p>I also spent significant time developing the passive tile flipper and getting it to function with perfect reliability. </p>
+					<span class="image fit"><img src="./pic01.png" alt="" /></span>
 
-								<span class="image fit"><img src="./pic02.png" width="400" alt="" /></span>
-							<p>Despite the team's initial concerns with the idea, the physical flipping of the tiles turned out to be the easy part and I was able to move from an idea to a working prototype in just a few hours. 
-                                The challenge was figuring out how to align the tiles after each flip so that they could be picked up again while minimizing positional inaccuracies. 
-                                All of the remaining prototypes targeted different potential failure modes that would emerge during testing.
-							</p>
 
-						</section>
-							
 
-							<div class="intro">
-								<video src = "./flipper.mp4"></video>
-							</div>
 
-							<p>The final design was highly successful and contributed to the machine's ability to operate continuously for hours without human intervention. 
-							</p>
-							
-								<!-- <section>
-									<h1>This is more text</h1>
-								</section> -->
-    						
+					<section>
+						<!-- <span class="image left"><img src="./pic03.gif" alt="" /></span> -->
+						<p>Un-tiled is a novelty pick-and-place machine capable of plotting (and animating)
+							low-resolution binary images.
+							It works by flipping a grid of dual-colored tiles one by one in order to form a complete
+							picture.
+							The process begins with a gantry system which moves a toolhead to the location of a tile
+							that needs to be flipped.
+							From there, the toolhead is lowered so that it can pick up the tile using a vacuum nozzle.
+							The tile is then dropped into the "flipper", a gravity-fed side that flips the tile to the
+							side with the opposite color.
+							Finally, the tile is returned to its spot in the grid, and the machine moves on to the next
+							tile.</p>
 
-							<!-- <h2><center>NEXT</center></h2>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/Lamp/pic01.png" alt="" />
-									</span>
-									<a href="lamp.html">
-										<h2>Lamp</h2>
-										<div class="content">
-											<p>A custom dimable LED desk light</p>
-										</div>
-									</a>
-								</article> -->
-							
-						</div>
-						
-					</div>
+						<p>Un-tiled was developed by a 5-person team as part of the Olin 2022 Principal of Integrated
+							Engineering class.
+							My most significant contributions included the design, prototyping, and manufacturing of
+							both the x-axis gantry belt system and the flipper mechanism. </p>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+
+
+
+
+
+					</section>
+					<section>
+
+
+
+						<h2>x-axis</h2>
+						<p>In order to complete each tile flip in the shortest time possible, the design of the gantry
+							was optimized for speed.
+							The team elected to use a cartesian drive system due to its simplicity
+							and compatibility with our system architecture. I was responsible for building out the
+							x-axis motion system which consisted of a motor mount and belt tensioner
+							along with the additional structure to mount the x-axis cross beam to the y-axis linear
+							rails.
+
+						</p>
+
+
+
+
+						<span class="image fit"><img src="./pic04.png" width="400" alt="" /></span>
+
+
+
+
+						<p>
+							One major learning opportunity I had when developing this subassembly was how to design for
+							compatibility and integration with the other subsystems.
+							In addition to frequent communication with the other members of the team, parametric
+							modeling helped my design to be easily adaptable and meet the dynamic requirements of the
+							other sub-systems.
+
+
+						</p>
+
+						<h2>flipper</h2>
+						<p>I also spent significant time developing the passive tile flipper and getting it to function
+							with perfect reliability. </p>
+
+						<span class="image fit"><img src="./pic02.png" width="400" alt="" /></span>
+						<p>Despite the team's initial concerns with the idea, the physical flipping of the tiles turned
+							out to be the easy part and I was able to move from an idea to a working prototype in just a
+							few hours.
+							The challenge was figuring out how to align the tiles after each flip so that they could be
+							picked up again while minimizing positional inaccuracies.
+							All of the remaining prototypes targeted different potential failure modes that would emerge
+							during testing.
+						</p>
+
+					</section>
+
+				</div>
+
+
+				<div>
+
+					<span class="image fit" id="view2">
+						<video id="video"></video>
+					</span>
+
+				</div>
+
+				<div id="view3" class="project">
+
+
+
+					<p>The final design was highly successful and contributed to the machine's ability to
+						operate continuously for hours without human intervention.
+					</p>
+
+				</div>
 
 			</div>
 
-		<!-- Scripts -->
-			<script src="../../assets/js/jquery.min.js"></script>
-			<script src="../../assets/js/browser.min.js"></script>
-			<script src="../../assets/js/breakpoints.min.js"></script>
-			<script src="../../assets/js/util.js"></script>
-			<script src="../../assets/js/main.js"></script>
-			<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-			<script src="./animation.js"></script>
+		</div>
 
-	</body>
+		<!-- Footer -->
+		<footer id="footer">
+			<div class="inner">
+				<section>
+					<h2>Get in touch</h2>
+					<form method="post" action="#">
+						<div class="fields">
+							<div class="field half">
+								<input type="text" name="name" id="name" placeholder="Name" />
+							</div>
+							<div class="field half">
+								<input type="email" name="email" id="email" placeholder="Email" />
+							</div>
+							<div class="field">
+								<textarea name="message" id="message" placeholder="Message"></textarea>
+							</div>
+						</div>
+						<ul class="actions">
+							<li><input type="submit" value="Send" class="primary" /></li>
+						</ul>
+					</form>
+				</section>
+				<section>
+					<h2>Follow</h2>
+					<ul class="icons">
+						<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a>
+						</li>
+						<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+						<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a>
+						</li>
+						<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a>
+						</li>
+						<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</section>
+				<ul class="copyright">
+					<li>&copy; Untitled. All rights reserved</li>
+					<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../assets/js/jquery.min.js"></script>
+	<script src="../../assets/js/browser.min.js"></script>
+	<script src="../../assets/js/breakpoints.min.js"></script>
+	<script src="../../assets/js/util.js"></script>
+	<script src="../../assets/js/main.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+		integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"
+		integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js"
+		integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js"
+		integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
+		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script src="./animation.js"></script>
+
+</body>
+
 </html>
