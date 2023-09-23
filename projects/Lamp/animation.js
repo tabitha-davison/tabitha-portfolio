@@ -73,7 +73,8 @@ window.onload = function(){
   },90);
       
       
-  video.src="./lamp_animation02.mp4";
+  // video.src="./lamp_animation02.mp4";
+  video.src="./output.mp4";
   
 
 

@@ -59,14 +59,51 @@
 		
 								
 							
-								<div class="project" id="view1">
+								<div id="view1">
 										<span  class="image fit">
-											<video id="video"></video>
+											<video id="v0" tabindex="0", autobuffer preload>
+												<source type='video/mp4;codecs="avc1.42E01E, mp4a.40.2"' src="lamp_animation02.mp4"></source>
+											</video>
+											<script src="sticky.js"></script>
+											<script>
+										
+												enterView({
+													selector: 'section',
+													enter: function(el) {
+														el.classList.add('entered');
+													}
+												})
+											
+												var frameNumber = 0, // start video at frame 0
+												// lower numbers = faster playback
+												playbackConst = 1000, 
+												// get page height from video duration
+												setHeight = document.getElementById("set-height"), 
+												// select video element         
+												vid = document.getElementById('v0'); 
+												// var vid = $('#v0')[0]; // jquery option
+										
+											// dynamically set the page height according to video length
+											vid.addEventListener('loadedmetadata', function() {
+											setHeight.style.height = Math.floor(vid.duration) * playbackConst + "px";
+											});
+										
+										
+											// Use requestAnimationFrame for smooth playback
+											function scrollPlay(){  
+											var frameNumber  = window.pageYOffset/playbackConst;
+											vid.currentTime  = frameNumber;
+											window.requestAnimationFrame(scrollPlay);
+											}
+										
+											window.requestAnimationFrame(scrollPlay);
+											
+											</script>
 											</span>
 							
 								</div>
 							
-							<div id="view3" class="project">
+							<div id="view3">
 							
 							<p>The finished product is the culmination of numerous prototypes where I perfected the form and function of the lamp.                   
                                 The tight space requirements demanded creative solutions for integrating the various electronic components.
@@ -217,7 +254,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" integrity="sha512-8E3KZoPoZCD+1dgfqhPbejQBnQfBXe8FuwL4z/c8sTrgeDMFEnoyTlH3obB4/fV+6Sg0a0XF+L/6xS4Xx1fUEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-		<script src="./animation.js"></script>
+		
 		<script src="../../assets/js/flickity.js"></script>
 		
 
