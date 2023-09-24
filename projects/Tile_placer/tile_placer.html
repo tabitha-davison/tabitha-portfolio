@@ -12,6 +12,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="../../assets/css/main.css" />
+	<link rel="stylesheet" href="../../assets/css/flickity.css" media="screen">
 	<noscript>
 		<link rel="stylesheet" href="../../assets/css/noscript.css" />
 	</noscript>
@@ -72,72 +73,86 @@
 						<!-- <span class="image left"><img src="./pic03.gif" alt="" /></span> -->
 						<p>Un-tiled is a novelty pick-and-place machine capable of plotting (and animating)
 							low-resolution binary images.
-							It works by flipping a grid of dual-colored tiles one by one in order to form a complete
-							picture.
-							The process begins with a gantry system which moves a toolhead to the location of a tile
-							that needs to be flipped.
-							From there, the toolhead is lowered so that it can pick up the tile using a vacuum nozzle.
-							The tile is then dropped into the "flipper", a gravity-fed side that flips the tile to the
-							side with the opposite color.
-							Finally, the tile is returned to its spot in the grid, and the machine moves on to the next
-							tile.</p>
-
-						<p>Un-tiled was developed by a 5-person team as part of the Olin 2022 Principal of Integrated
-							Engineering class.
-							My most significant contributions included the design, prototyping, and manufacturing of
-							both the x-axis gantry belt system and the flipper mechanism. </p>
+							It uses a pneumatic tool head and a 3-axis gantry to manipulate a grid of dual-colored
+							tiles. Tiles are picked up and flipped over one by one to form a complete
+							picture.</p>
 
 
 
 
+
+
+
+
+						<p>Un-tiled was developed by a 5-person team over an 8-week scrum-style workflow where we exercised iterative and agile design practices.</p>
+
+
+
+						<div class="carousel small"
+						data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+						<img src="pic09.png">
+						<img src="pic11.png">
+						<img src="pic12.png">
+						<img src="pic04.png">
+						<img src="pic05.png">
+						<img src="pic06.png">
+						
+
+						
+						
+					</div>
 
 
 					</section>
+					&nbsp;
+					&nbsp;
+					&nbsp;
 					<section>
 
 
 
 						<h2>x-axis</h2>
-						<p>In order to complete each tile flip in the shortest time possible, the design of the gantry
-							was optimized for speed.
-							The team elected to use a cartesian drive system due to its simplicity
-							and compatibility with our system architecture. I was responsible for building out the
-							x-axis motion system which consisted of a motor mount and belt tensioner
-							along with the additional structure to mount the x-axis cross beam to the y-axis linear
-							rails.
+						<p>To cut down on the "time-per-tile-flip", the gantry
+							was optimized for speed. The team performed a trade study on a variety of kinematic systems,
+							settling on a cartesian architecture for the final design.
+
 
 						</p>
+						
+
+						
+						
+						<span class="image small"><img src="pic10.png" alt="" /></span>
+						
 
 
 
-
-						<span class="image fit"><img src="./pic04.png" width="400" alt="" /></span>
 
 
 
 
 						<p>
-							One major learning opportunity I had when developing this subassembly was how to design for
-							compatibility and integration with the other subsystems.
-							In addition to frequent communication with the other members of the team, parametric
-							modeling helped my design to be easily adaptable and meet the dynamic requirements of the
-							other sub-systems.
+							
+
+							I took on the design and integration of the x-axis motion system and supporting structure.
+							Custom metal mounting plates were used to provide a robust connection between the x-axis
+							stepper motor, cross-beam, and belt tensioner mechanism.
+							Parametric modeling helped my design integrate correctly with the other sub-systems across
+							multiple design revisions.
 
 
 						</p>
 
 						<h2>flipper</h2>
-						<p>I also spent significant time developing the passive tile flipper and getting it to function
-							with perfect reliability. </p>
+						<p>I also develped the passive tile flipper system. </p>
 
-						<span class="image fit"><img src="./pic02.png" width="400" alt="" /></span>
-						<p>Despite the team's initial concerns with the idea, the physical flipping of the tiles turned
-							out to be the easy part and I was able to move from an idea to a working prototype in just a
-							few hours.
-							The challenge was figuring out how to align the tiles after each flip so that they could be
-							picked up again while minimizing positional inaccuracies.
-							All of the remaining prototypes targeted different potential failure modes that would emerge
-							during testing.
+						<span class="image mid"><img src="./pic02.png" alt="" /></span>
+						<p>I was able to move from an idea to a working prototype in just a
+                            few hours with the aid of 3D printing.
+                            Subsequent iterations  of the mechanism sought to eliminate different failure modes that
+                            would emerge during testing.</p>
+							<p>     In addition to tuning the mechanical reliability, we implemented software-based fault detection and resolution to the flipper system.
+                                This increased the overall fault-tolerance of the machine, allowing it to run for even longer without operator intervention.
 						</p>
 
 					</section>
@@ -155,13 +170,78 @@
 
 				<div id="view3" class="project">
 
+					<h2>Results</h2>
 
-
-					<p>The final design was highly successful and contributed to the machine's ability to
-						operate continuously for hours without human intervention.
+					<p>
+						In the end, we achieved fully automatic plotting of individual images which we then extended to rendering frames of a short animation. 
+						On average, the gantry was able to flip a tile anywhere on the grid in just 5.1 seconds, traveling at speeds of 1000mm/s.
 					</p>
-
+					<span class="image small"><img src="./pic03.gif" alt="" /></span>
 				</div>
+
+
+				
+
+
+
+
+				<h2>
+					&nbsp;
+					<center>NEXT</center>
+				</h2>
+
+				<section class="tiles">
+
+
+
+					<article class="style1">
+						<span class="image">
+							<img src="../Lamp/pic00.png" alt="" />
+						</span>
+						<a href="../Lamp/lamp.html">
+							<h2>Lamp</h2>
+							<div class="content">
+								<p>A custom dimable LED desk light</p>
+							</div>
+						</a>
+					</article>
+
+					<article class="style1">
+						<span class="image">
+							<img src="../Rocketry/pic01.png" alt="" />
+						</span>
+						<a href="..s/Rocketry/rocketry.html">
+							<h2>Model Rocket Avionics</h2>
+							<div class="content">
+								<p>A full-featured avionics suit developed for high-power model rockets</p>
+							</div>
+						</a>
+					</article>
+
+
+					<article class="style1">
+						<span class="image">
+							<img src="../Open_Box/pic00.png" alt="" />
+						</span>
+						<a href="../Open_Box/open_box.html">
+							<h2>Open Box</h2>
+							<div class="content">
+								<p>An open-source box design with an invisable hinge</p>
+							</div>
+						</a>
+					</article>
+
+
+
+
+
+
+
+
+
+
+
+
 
 			</div>
 
@@ -236,6 +316,7 @@
 		integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A=="
 		crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="./animation.js"></script>
+	<script src="../../assets/js/flickity.js"></script>
 
 </body>
 

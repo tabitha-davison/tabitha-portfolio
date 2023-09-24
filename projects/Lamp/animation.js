@@ -5,11 +5,6 @@ window.onload = function(){
     
   }, 100);
 
-
-
-
-
-
 };
 
   var videoTarget = $('#video');
