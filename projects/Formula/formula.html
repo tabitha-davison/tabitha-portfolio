@@ -11,7 +11,9 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../assets/css/main.css" />
+		<link rel="stylesheet" href="../../assets/css/flickity.css" media="screen">
 		<noscript><link rel="stylesheet" href="../../assets/css/noscript.css" /></noscript>
+		
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
@@ -55,21 +57,44 @@
 							<span class="image fit"><img src="./pic11.png" alt="" /></span>
 
 
-							<p>Olin Electric Motorporst is a studet run team with a goal of developing a new electric racecar every year from the chassis up to race at the Formula SAE Electric anual competion.</p>
-							<h2>DRIVETRAIN</h2>
-							<!-- <span class="image right"><img src="./pic01.png" alt="" /></span> -->
+							<p>Olin Electric Motorporst is a studet-run team where we develop an electric racecar from the chassis up to compete in the Formula SAE Electric competion.
+								I have been on the team for 3 years where I have taken on a viariety of rolls and projects.
+								As the team's current mechanical desin lead, I oversee the core devlopment across the suspension, drivetrain, accumulator, and cockpit subteams of our latest car revision.
+							</p>
+
+							<h2>Eccentric Tensioner</h2>
 							
 							
-							<p>During my time on the drivetrain subteam, I was responisible for the eccentric chain tensioner plates which support the rear bearings and differential.
-								I used hand calculations to justify the number of bolts required to hold the part in place with an acceptable saftey factor.
+							Our current car uses a chaindrive to deliver power from the motor to the rear differential. 
+							The passive chain tensioner is a critcal componenet in the drietrain to ensure proper power delivery and eliminate shock loading in the chain.
+							The tensioner relies on an off-center (eccentric) bearing block to make fine adjustments to the distance between the differentil and motor. 
+							<!-- <span class="image small"><img src="./pic15.png" alt="" /></span> -->
+
+							<div class="carousel small"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic15.png">
+									<img src="pic14.png">
+									<img src="pic12.png">
+									<img src="pic02.png">
+								</div>
+							
+							<p>
+								I used hand calculations to justify the bolt pattern with a .
 								I went on to run a frictional contact study in Ansys mechanical to gain more insigt into the stength of the bolted connection.
 								The results of the FEA sugest that the two bolts that I planned to use will sufice.
 							</p>
-							<span class="image half"><img src="./pic04.png" alt="" /></span>
-							<span class="image half"><img src="./pic05.png" alt="" /></span>
 
-							<span class="image half"><img src="./pic12.png" alt="" /></span>
-							<span class="image half"><img src="./pic02.png" alt="" /></span>
+
+
+							<div class="carousel small"
+									data-flickity='{ "imagesLoaded": true, "percentPosition": false, "wrapAround": true }'>
+									<img src="pic40.png">
+									<img src="pic41.png">
+									<img src="pic42.png">
+						
+								</div>
+
+						
 							
 
 							
@@ -181,6 +206,7 @@
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.js" integrity="sha512-judXDFLnOTJsUwd55lhbrX3uSoSQSOZR6vNrsll+4ViUFv+XOIr/xaIK96soMj6s5jVszd7I97a0H+WhgFwTEg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     		<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.js" integrity="sha512-mq6TSOBEH8eoYFBvyDQOQf63xgTeAk7ps+MHGLWZ6Byz0BqQzrP+3GIgYL+KvLaWgpL8XgDVbIRYQeLa3Vqu6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 			<script src="./animation.js"></script>
+			<script src="../../assets/js/flickity.js"></script>
 
 	</body>
 </html>
