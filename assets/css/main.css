@@ -2409,6 +2409,10 @@ input, select, textarea {
 				max-width: 50%;
 			}
 
+			.image.thumbnail img{
+				max-width: 100%;
+			}
+
 			.image.left video, .image.right video, .image.third video, .image.half video, .image.mid video, .image.fit video{
 				max-width: 100%;
 			}
@@ -2429,6 +2433,13 @@ input, select, textarea {
 				padding: 0 0 2em 0;
 				top: 0.25em;
 				}
+
+				.image.image.thumbnail {
+					width: 20%;
+					float: right;
+					padding: 0 0 1em 2em;
+					top: -1em;
+					}
 
 			.image.half {
 			max-width: 50%;
