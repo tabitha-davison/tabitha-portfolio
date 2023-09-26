@@ -69,8 +69,7 @@ window.onload = function(){
   video.currentTime = videoLength* delay/100 -0.01;
   },20);
   
-      
-      
+    
 
   video.src="./lamp_animation_FFMPEG.mp4";
   
