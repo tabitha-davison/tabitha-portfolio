@@ -10,7 +10,7 @@ window.onload = function(){
   var videoTarget = $('#video');
   var duration = videoTarget.height();
   var video = $('#video').get(0);
-  video.currentTime =  1;
+  // video.currentTime =  1;
   var progressvalue = 0;
   var vid_height = 0;
   var currentTime = 0;
@@ -66,7 +66,7 @@ window.onload = function(){
   delay += (progressvalue -delay) * accelamount;
   console.log(progressvalue, delay, vid_height);
   
-  // video.currentTime = videoLength* delay/100 -0.01;
+  video.currentTime = videoLength* delay/100 -0.01;
   },20);
   
       
