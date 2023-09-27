@@ -2430,7 +2430,7 @@ input, select, textarea {
 
 		  @media screen and ( min-width: 768px ) {
 
-			.image.left img, .image.right img, .image.third img, .image.half img, .image.mid img, .image.fit img{
+			.image.left img, .image.right img, .image.third img, .image.half img, .image.mid img, .image.fit img, .image.mini img{
 				max-width: 100%;
 			}
 
@@ -2447,7 +2447,16 @@ input, select, textarea {
 			}
 
 
+			
 
+		.image.mini {
+			max-width: 30%;
+			margin-left: auto;
+  			margin-right: auto;
+			display: block;
+			float: center;
+			padding: 0 0 4em 0;
+		}
 	
 
 		.image.third {
