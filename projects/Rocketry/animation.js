@@ -102,7 +102,7 @@ var videoTarget = $('#video');
   
       
       
-  video.src="./gs_animation_FFMPEG.mp4";
+  video.src="./gs_animation3_FFMPEG.mp4";
   
  
 
