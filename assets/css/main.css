@@ -2409,6 +2409,17 @@ input, select, textarea {
   } */
 
 
+  	.ytvid {
+		aspect-ratio: 16 / 9;
+		border-radius: 4px;
+  		width: 100%;
+	}
+
+	
+
+	
+
+
 	.image {
 		border-radius: 4px;
 		border: 0;
@@ -2435,7 +2446,7 @@ input, select, textarea {
 				max-width: 100%;
 			}
 
-			.image.third img, {
+			.image.third img, .image.small_left img, .image.small_right img, .image.small_mid img{
 				max-width: 100%;
 			}
 
@@ -2468,13 +2479,50 @@ input, select, textarea {
 			max-width: calc(33.33333% - 1em);
 			margin: 0em 0em 0em 1em;
 	
-			float: left;
+			float: right;
 			padding: 0em 0em 2em 0em;
 			left: -1em; 
 			
-			
-			
 			}
+
+			.image.small_left {
+				max-width: calc(50% - 1em);
+				margin: 0em 2em 1em 0em;
+
+
+				padding: 0em 0em 0em 0em;
+				float: left;
+				
+				/* left: -2em;  */
+				
+				}
+
+			.image.small_right {
+					max-width: calc(50% - 1em);
+					margin: 0em 0em 1em 0em;
+					padding: 0em 0em 0em 0em;
+					float: right;
+					
+					left: 0em; 
+					
+					}
+
+
+
+
+
+
+
+					.image.small_mid {
+						max-width: 60%;
+				margin-left: auto;
+				margin-right: auto;
+				display: block;
+				float: center;
+				padding: 0 0 2em 0;
+				top: 0.25em;
+						
+						}
 
 
 			.image.small {
