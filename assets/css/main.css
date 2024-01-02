@@ -2487,7 +2487,7 @@ input, select, textarea {
 
 			.image.small_left {
 				max-width: calc(50% - 1em);
-				margin: 0em 2em 1em 0em;
+				margin: 0em 2em 2em 0em;
 
 
 				padding: 0em 0em 0em 0em;
@@ -2499,7 +2499,7 @@ input, select, textarea {
 
 			.image.small_right {
 					max-width: calc(50% - 1em);
-					margin: 0em 0em 1em 0em;
+					margin: 0em 0em 2em 0em;
 					padding: 0em 0em 0em 0em;
 					float: right;
 					
@@ -2577,7 +2577,7 @@ input, select, textarea {
   			margin-right: auto;
 			display: block;
 			float: center;
-			padding: 1em 1.5em 1em 1.5em;
+			padding: 1em 0em 1em 0em;
 			max-width: 100%
 	
 		}
